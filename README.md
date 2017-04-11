@@ -1,7 +1,9 @@
 # Promifill
 
-Promifill saves you from shipping polyfill code to all browsers.  
+Promifill saves you from shipping polyfill code to all browsers.
 Your own polyfill URL will be loaded only if needed.
+
+✅ Promifill is < 500 Bytes.
 
 # Usage
 
@@ -30,5 +32,5 @@ promifill('IntersectionObserver' in window, ioObserver).then(() => {
 
 # Feedback
 
-This is a PWA experiment (medium article coming soon).  
+This is a PWA experiment (medium article coming soon).
 For feedback or questions, please open a new issue.
