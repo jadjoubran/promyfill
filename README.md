@@ -10,6 +10,7 @@ Your own polyfill URL will be loaded only if needed.
 
 ```javascript
 const fetchPolyfill = 'https://unpkg.com/unfetch@2.1.2/dist/unfetch.umd.js';
+
 promifill('fetch' in window, fetchPolyfill).then(() => {
     //fetch is available (polyfill is fetched only if needed)
     fetch('users.json');
@@ -20,6 +21,7 @@ promifill('fetch' in window, fetchPolyfill).then(() => {
 
 ```javascript
 const ioObserver = 'https://rawgit.com/WICG/IntersectionObserver/gh-pages/polyfill/intersection-observer.js';
+
 promifill('IntersectionObserver' in window, ioObserver).then(() => {
     const io = new IntersectionObserver(() => {});
 })
