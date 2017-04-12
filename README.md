@@ -22,9 +22,9 @@ promifill('fetch' in window, fetchPolyfill).then(() => {
 ## Intersection observer example
 
 ```javascript
-const ioObserver = 'https://rawgit.com/WICG/IntersectionObserver/gh-pages/polyfill/intersection-observer.js';
+const ioPolyfill = 'https://rawgit.com/WICG/IntersectionObserver/gh-pages/polyfill/intersection-observer.js';
 
-promifill('IntersectionObserver' in window, ioObserver).then(() => {
+promifill('IntersectionObserver' in window, ioPolyfill).then(() => {
     const io = new IntersectionObserver(() => {});
 })
 
