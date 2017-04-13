@@ -22,7 +22,7 @@ function loadPolyfill(src) {
     });
 }
 
-export function promifill(api, polyfillUrl) {
+export function promyfill(api, polyfillUrl) {
     return new Promise(function (resolve, reject) {
         supports(api).then(function () {
             resolve(api);

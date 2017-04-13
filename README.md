@@ -1,9 +1,9 @@
-# Promifill
+# Promyfill
 
-Promifill saves you from shipping polyfill code to all browsers.
+Promyfill saves you from shipping polyfill code to all browsers.
 Your own polyfill URL will be loaded only if needed.
 
-✅ Promifill is < 500 Bytes.
+✅ Promyfill is < 500 Bytes.
 
 # Usage
 
@@ -13,7 +13,7 @@ Your own polyfill URL will be loaded only if needed.
 ```javascript
 const fetchPolyfill = 'https://unpkg.com/unfetch@2.1.2/dist/unfetch.umd.js';
 
-promifill('fetch' in window, fetchPolyfill).then(() => {
+promyfill('fetch' in window, fetchPolyfill).then(() => {
     //fetch is available (polyfill is fetched only if needed)
     fetch('users.json');
 });
@@ -24,7 +24,7 @@ promifill('fetch' in window, fetchPolyfill).then(() => {
 ```javascript
 const ioPolyfill = 'https://rawgit.com/WICG/IntersectionObserver/gh-pages/polyfill/intersection-observer.js';
 
-promifill('IntersectionObserver' in window, ioPolyfill).then(() => {
+promyfill('IntersectionObserver' in window, ioPolyfill).then(() => {
     const io = new IntersectionObserver(() => {});
 })
 
