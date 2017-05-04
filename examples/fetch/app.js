@@ -5,8 +5,7 @@
 var usersList = document.getElementById('users-list');
 usersList.innerHTML += ' - JavaScript booted.';
 
-
-var fetchPolyfill = 'https://unpkg.com/unfetch@2.1.2/dist/unfetch.umd.js';
+var fetchPolyfill = 'https://rawgit.com/github/fetch/master/fetch.js';
 promyfill('fetch' in window, fetchPolyfill).then(function(){
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(function(response) {

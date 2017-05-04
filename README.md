@@ -11,7 +11,7 @@ Your own polyfill URL will be loaded only if needed.
 ## Fetch example
 
 ```javascript
-const fetchPolyfill = 'https://unpkg.com/unfetch@2.1.2/dist/unfetch.umd.js';
+const fetchPolyfill = 'https://rawgit.com/github/fetch/master/fetch.js';
 
 promyfill('fetch' in window, fetchPolyfill).then(() => {
     //fetch is available (polyfill is fetched only if needed)
