@@ -7,8 +7,18 @@ Your own polyfill URL will be loaded only if needed.
 
 # Usage
 
-
 ## Fetch example
+
+```javascript
+const fetchPolyfill = 'https://rawgit.com/github/fetch/master/fetch.js';
+
+promyfill(window.fetch, fetchPolyfill).then((fetch) => {
+    //fetch is available (polyfill is fetched only if needed)
+    fetch('users.json');
+});
+```
+
+## Alternate usage
 
 ```javascript
 const fetchPolyfill = 'https://rawgit.com/github/fetch/master/fetch.js';
@@ -27,7 +37,6 @@ const ioPolyfill = 'https://rawgit.com/WICG/IntersectionObserver/gh-pages/polyfi
 promyfill('IntersectionObserver' in window, ioPolyfill).then(() => {
     const io = new IntersectionObserver(() => {});
 })
-
 ```
 
 # Feedback

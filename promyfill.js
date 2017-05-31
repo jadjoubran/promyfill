@@ -3,14 +3,14 @@ function supports(api) {
         if (!!api) {
             resolve(api);
         }
-        reject(api);
+        reject(false);
     });
 }
 
 function loadPolyfill(src) {
     return new Promise(function (resolve, reject) {
         if (!src) {
-            reject();
+            reject(false);
         }
         let p = document.createElement('script');
         p.type = 'text/javascript';
