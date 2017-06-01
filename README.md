@@ -41,5 +41,5 @@ promyfill('IntersectionObserver' in window, ioPolyfill).then(() => {
 
 # Feedback
 
-This is a PWA experiment (medium article coming soon).
+This is a PWA experiment, usage & motivation detailed in this [Medium article](https://medium.com/@JoubranJad/progressive-web-app-experiment-promyfill-900faddda22f)
 For feedback or questions, please open a new issue.
