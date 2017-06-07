@@ -39,6 +39,11 @@ promyfill('IntersectionObserver' in window, ioPolyfill).then(() => {
 })
 ```
 
+# "Promises" support
+
+Promyfill relies on native promises available in most modern browsers, except a [few](http://caniuse.com/#search=promise) such as IE11, Android 4.4].
+In order to support these browsers, you can use [promise-min](https://github.com/taylorhakes/promise-polyfill) from taylorhakes
+
 # Feedback
 
 This is a PWA experiment, usage & motivation detailed in this [Medium article](https://medium.com/@JoubranJad/progressive-web-app-experiment-promyfill-900faddda22f)
