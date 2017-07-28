@@ -12,12 +12,11 @@ function loadPolyfill(src) {
         if (!src) {
             reject(false);
         }
-        let p = document.createElement('script');
-        p.type = 'text/javascript';
-        p.async = true; p.defer = true;
+        var p = document.createElement('script');
+        p.async = 1; p.defer = 1;
         p.src = src;
-        p.onload = () => resolve(src);
-        p.onerror = () => reject();
+        p.onload = function(){resolve(src)};
+        p.onerror = function(){reject()};
         window.document.body.appendChild(p);
     });
 }

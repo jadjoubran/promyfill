@@ -3,7 +3,7 @@
 Promyfill saves you from shipping polyfill code to all browsers.
 Your own polyfill URL will be loaded only if needed.
 
-✅ Promyfill is < 500 Bytes.
+✅ Promyfill is ~450 Bytes.
 
 # Usage
 
